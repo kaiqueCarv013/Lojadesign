@@ -3,7 +3,7 @@
 Este é um site onde sua ideia principal é a divulgação de projetos de designs personaizados onde o cliente pode usar o site pra vender.
 
 🔗 **Acesse o site:**  
-👉 [https://seu-usuario.github.io/seu-repositorio](https://seu-usuario.github.io/seu-repositorio)
+👉 [acesse o site:](https://kaiquecarv013.github.io/Lojadesign/)
 
 ---
 
