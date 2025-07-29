@@ -1,0 +1,274 @@
+
+
+--------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+    $('#mobile_btn').on('click', function () {
+        $('#mobile_menu').toggleClass('active');
+        $('#mobile_btn').find('i').toggleClass('fa-x');
+    });
+});
+
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+menu.css:
+#projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#projetos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: #00008B;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.port1-description {
+    color: black;
+    text-align: center;
+}
+
+.port2-description {
+    color: black;
+    text-align: center;
+}
+
+.port3-description {
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 1170px) {
+    #projetos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projetos {
+        width: calc(50% - 12px);
+    }
+}
+
+html5: 
+<section id="projetos">
+            <h2 class="section-title">
+                Projetos:
+            </h2>
+            <h3>
+                Projetos de Design Veja Alguns Modelos Prontos.
+            </h3>
+
+            <div id="projetos">
+                <div class="projetos">
+                    <div class="logo">
+                        <i class="portifolio-1"></i>
+                        <img src="logo2.0.webp" alt="port1-">
+                        <h3 class="portifolio-1">Imagem 1: </h3>
+
+                        <span class="port1-description">
+                            Imagem personalizada que pode ser usado pra varias propostas a principal é servir de <br>
+                            capa de videos;
+                        </span>
+                        <div id="projetos">
+                            <div class="projetos">
+                                <div class="logo">
+                                    <i class="portifolio-2"></i>
+
+                                    <img src="port2.0.webp" class="dish-image" alt="logo1">
+                                    <h3 class="portifolio-2">Imagem 2: </h3>
+
+                                    <span class="port2-description">
+                                        Imagem moderna criada com recursos visuais como Canva e Photoshop para ser usada
+                                        como um banner <br> De redes sociais;
+                                    </span>
+                                    <div id="projetos">
+                                        <div class="projetos">
+                                            <div class="logo">
+                                                <i class="portifolio-3"></i>
+
+                                                <img src="potifolio3.0.webp" class="dish-image" alt="logo2">
+                                                <h3 class="portifolio-3"> Imagem 3:</h3>
+
+                                                <span class="port3-description">
+                                                    Imagem moderna criada com recursos visuais como Canva e Photoshop;
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+        </section>
+
+
+
+
+
+footer antigo 
+footer {
+    background-color: rgb(198, 190, 238);
+}
+
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-content: center;
+}
+
+#copyright {
+    color: #1d1d1d;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+footer {
+    background-color: white;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 12px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(100%);
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+footer html 
+  <footer>
+        <img src="wave.svg" alt="waves">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy2025 KaiqueCarv
+            </span>
+
+            <div class="social-icons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer
+
+    java scrip 
+    $(document).ready(function () {
+    $('#mobile_btn').on('click', function () {
+        $('#mobile_menu').toggleClass('active');
+        $('#mobile_btn').find('i').toggleClass('fa-x').toggleClass('fa-bars');
+    });
+
+    const sections = $('section');
+    const navItems = $('.nav-item');
+
+    $(window).on('scroll', function () {
+        const header = $('header');
+        const scrollPosition = $(window).scrollTop() - header.outerHeight();
+
+        let activesectionIndex = 0;
+
+        if (scrollPosition <= 0) {
+            header.css('box-shadow', 'none');
+        } else {
+            header.css('box-shadow', '5px 1px 5px rgba(0, 0, 0, 0.1)');
+        }
+
+        sections.each(function (i) {
+            const section = $(this);
+            const sectionTop = section.offset().top - 96
+            const sectiombottom = sectionTop + section.outerHeight();
+
+            if (scrollposistion >= sectionTop && scrollPosition < sectionbottom) {
+                activesectionIndex = i;
+                return false;
+            }
+        })
+
+        navItems.removeclass('active');
+        $(navItems[activesectionIndex]).addclass('active');
+    });
+});
+
+
+
+
+

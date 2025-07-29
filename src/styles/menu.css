@@ -1,0 +1,138 @@
+#projetos {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#projetos h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#projetos p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.galeria-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projeto {
+    width: 280px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projeto p {
+    padding: 15px;
+    font-size: 1em;
+    color: #444;
+}
+
+/* Paleta de cores e estilos base */
+:root {
+    --cor-fundo: #f0f0f5;
+    --cor-texto: #333;
+    --cor-secundaria: #ff5e57;
+    --cor-hover: #ff7b72;
+    --cor-fundo-card: #fff;
+}
+
+/* Seção Projetos */
+#projetos {
+    padding: 60px 20px;
+    background: var(--cor-fundo);
+    text-align: center;
+}
+
+#projetos h2 {
+    font-size: 2.5em;
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+}
+
+#projetos p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Galeria de cards */
+.galeria-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Cada projeto individual */
+.projeto {
+    width: 280px;
+    background: var(--cor-fundo-card);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: aparecer 0.8s ease forwards;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projeto p {
+    padding: 15px;
+    font-size: 1em;
+    color: var(--cor-texto);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .galeria-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto {
+        width: 90%;
+    }
+}
+
+/* Animação */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

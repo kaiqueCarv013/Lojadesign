@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" href="logo2.webp" type="image/png">
+    <title>Yuri Desings</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+
+            <i class="fa-solid fa-crown" id="nav_logo">yuridesings</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Solicite seu projeto personalizado
+            </button>
+
+            <button id="mobile_btn">
+
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                <a href="#contato" class="btn-default">Solicite seu projeto personalizado</a>
+            </button>
+
+        </div>
+
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Yuri Soluções Criativas em
+                    <span>Design</span>
+                </h1>
+
+                <p class="description">Yuri é designer visual que transforma ideias em projetos criativos, funcionais e
+                    com identidade. <br> Cada trabalho é feito com atenção ao detalhe e foco em comunicação clara e
+                    impactante.</p>
+
+                <div id="cta_buttons">
+                    <a href="#projetos" class="btn-default">Ver Projetos</a>
+
+                    <a href="#"></a>
+
+                </div>
+
+                <div id="banner">
+                    <div class="shape"></div>
+                    <img src="logo1.webp" alt="banner" class="imagem-em-cima">
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <p>Veja alguns exemplos de designs já criados, como banners, perfis e muito mais.</p>
+
+            <div class="galeria-projetos">
+                <div class="projeto">
+                    <img src="portifolio1.webp" alt="ThumbNail">
+                    <p>ThumbNail</p>
+                </div>
+
+                <div class="projeto">
+                    <img src="port2.0.webp" alt="Foto de perfil">
+                    <p>Foto de perfil criativa</p>
+                </div>
+
+                <div class="projeto">
+                    <img src="portifolio4.webp" alt="banner">
+                    <p>Banner</p>
+                </div>
+
+                <div class="projeto">
+                    <img src="portifolio3.webp" alt="Banner">
+                    <p>Banner</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Fale com o Vendedor</h2>
+            <p>Preencha o formulário abaixo e entraremos em contato:</p>
+
+            <form action="https://formsubmit.co/SEUEMAIL@email.com" method="POST">
+                <!-- Evita spam -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Redireciona para uma página de obrigado (opcional) -->
+                <!-- <input type="hidden" name="_next" value="https://seusite.com/obrigado.html"> -->
+
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <textarea name="message" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                <button type="submit">Entre Em Contato</button>
+            </form>
+        </section>
+
+
+
+    </main>
+
+    <!-- Wave vai aqui, fora do footer -->
+    <img src="wave (1).svg" alt="waves" class="wave">
+
+    <footer>
+
+
+        <div id="footer_items"> <!-- corrigido o id -->
+            <span id="copyright">
+                &copy; 2025 KaiqueCarv
+            </span>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/kaiqueje4/?next=%2Fjapaoncrp%2F"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

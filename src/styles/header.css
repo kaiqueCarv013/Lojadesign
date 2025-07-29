@@ -1,0 +1,139 @@
+/* Header principal */
+header {
+    width: 100%;
+    padding: 28px 8%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 3;
+    /* Garante que o padding não estoure a largura */
+}
+
+/* Container de navegação */
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1, 900;
+}
+
+/* Logo da navegação */
+#nav_logo {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Lista de navegação (desktop) */
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Itens de navegação */
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* Item ativo da navegação */
+.nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: 3px solid #696969;
+}
+
+/* Hover nos links */
+.nav-item a:hover {
+    color: #1d1d1d;
+}
+
+/* Botão do menu mobile (hambúrguer) */
+#mobile_btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Menu mobile oculto inicialmente */
+#mobile_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Menu mobile ativo (mostrado com classe .active) */
+#mobile_menu.active {
+    display: flex;
+}
+
+/* Lista do menu mobile */
+#mobile_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0;
+    padding: 0;
+}
+
+/* Itens do menu mobile */
+#mobile_nav_list .nav-item {
+    list-style: none;
+    text-align: center;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1170px) {
+
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+    }
+}
+
+#mobile_menu {
+    display: flex;
+}
+
+#mobile_nav_list {
+    width: 100%;
+}
+
+#mobile_nav_list .nav-item a {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+#mobile_menu {
+    display: none;
+    background-color: #ffffff;
+    padding: 1rem;
+
+}
+
+#mobile_menu.active {
+    display: block;
+}
